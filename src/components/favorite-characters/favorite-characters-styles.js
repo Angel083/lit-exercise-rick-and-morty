@@ -13,8 +13,8 @@ export default css`
         height: 50vh;;
     }
     .dialog{
-        overflow-y: scroll;
-        transition: all 300mx ease-in;
+        overflow-y: auto;
+        transition: all 300ms ease-in;
         height: 90vh;
         width:  90vw;
         position: fixed;
@@ -30,6 +30,7 @@ export default css`
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        padding: 1rem;
     }
     .dialog__main {
         width: 100%;

@@ -33,13 +33,6 @@ class FavoriteCharacters extends LitElement {
     }));
   }
 
-  updated(changedProperties) {
-    console.log(changedProperties);
-    if (changedProperties.has('favorities')) {
-      console.log(this.characters + "update");
-    }
-  }
-
 
   render() {
     return html`

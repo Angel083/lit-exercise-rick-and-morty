@@ -44,8 +44,7 @@ class HomePage extends LitElement {
       const positionCharacter = this.favorities.indexOf(character)
       this.favorities.splice(positionCharacter, 1)
     }
-    console.log("update characteres");
-    console.log(this.favorities);
+    this.favorities = [...this.favorities]
     this.requestUpdate();
   }
   dialog(){
